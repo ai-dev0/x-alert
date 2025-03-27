@@ -1,0 +1,4 @@
+{
+  "twitterAccounts": ["account1", "account2"],
+  "blacklist": ["0xBlacklistedAddress", "BlacklistedSolanaAddress"]
+}

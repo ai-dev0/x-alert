@@ -1,0 +1,26 @@
+{
+  "name": "x-sniper",
+  "version": "1.0.0",
+  "description": "X sniper project: listens to Twitter/X and auto-buys contracts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+    "start:listener": "ts-node src/listener/listener.ts",
+    "start:watcher": "ts-node src/watcher/watcher.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.73.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^6.0.0",
+    "mongodb": "^5.1.0",
+    "nodemon": "^3.1.9",
+    "puppeteer": "^24.1.1",
+    "twitter-api-v2": "^1.13.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
